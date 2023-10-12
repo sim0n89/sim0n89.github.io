@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="верстка товара">
+	<meta name="keywords"
+				content="">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>H2O-корзина</title>
+</head>
+
+
+  <body>
+    <header class="header">
+  <div class="header__top d-none d-lg-flex">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="header__place place d-flex align-items-center">
+          <span class="svg --svg__place"></span>
+          <span class="place__title">Иваново</span>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center">
+        <a href="tel:+8800000000" class="d-flex">8 (800) 000 000 0</a>
+      </div>
+      <div class="col-md-6">
+        <div class="navbar navbar-expand h-100">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="" class="nav-link active">Услуги</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Портфолио</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Статьи</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Акции</a></li>
+            <li class="nav-item"><a href="" class="nav-link">О компании</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="header__base hbase">
+    <div class="container">
+
+      <div class="col-12 d-flex justify-content-between">
+				<div class="d-flex align-items-center">
+					<a href="#" class="d-flex d-md-none" id="mobilemenu-toogler">
+						<span class="svg --svg__burger-black"></span>
+					</a>
+					<a href="/" class="logo">
+						<span class="svg --svg__logo"></span>
+					</a>
+				</div>
+				
+        <div class="hbase__center d-none d-md-flex justify-content-center">
+          <div class="dropdown">
+            <a
+              class="btn btn-primary dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="svg --svg__burger"></span>Каталог
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/category.html">Септики</a></li>
+              <li><a class="dropdown-item" href="/category.html">Смесители</a></li>
+              <li><a class="dropdown-item" href="/category.html">Кессоны для скважин</a></li>
+              <li><a class="dropdown-item" href="/category.html">Платиковые погреба</a></li>
+              <li><a class="dropdown-item" href="/category.html">Бытовые фильтры для воды</a></li>
+              <li><a class="dropdown-item" href="/category.html">Коттеджные фильтры для воды</a></li>
+              <li><a class="dropdown-item" href="/category.html">Промышленные фильтры для воды</a></li>
+              <li><a class="dropdown-item" href="/category.html">Насосы и насосное оборудование</a></li>
+              <li><a class="dropdown-item" href="/category.html">Кварцевые обогреватели</a></li>
+              <li><a class="dropdown-item" href="/category.html">Тёплый пол и терморегуляторы</a></li>
+            </ul>
+          </div>
+          <div class="input-group search">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Найти"
+              aria-describedby="search-btn"
+            />
+            <button class="btn btn-primary search__btn" type="button" id="button-addon1">
+              <span class="svg --svg__search"></span>
+            </button>
+          </div>
+        </div>
+        <div class="hbase__user user">
+          <div class="d-flex align-items-center h-100">
+            <a class="user__link link d-flex flex-column align-items-center position-relative d-md-none">
+              <span class="svg --svg__phone position-relative"
+                ></span
+              >
+            </a>
+            <a class="user__link link d-flex flex-column align-items-center position-relative">
+              <span class="svg --svg__heart position-relative"
+                ><span class="link__value position-absolute">500</span></span
+              >
+              <span class="link__title d-none d-md-block">Избранное</span>
+            </a>
+            <a href='/cart.html' class="user__link link d-flex flex-column align-items-center position-relative">
+              <span class="svg --svg__cart position-relative"
+                ><span class="link__value position-absolute">500</span></span
+              >
+              <span class="link__title d-none d-md-block">Корзина</span>
+            </a>
+            <a class="user__link link d-flex flex-column align-items-center position-relative" data-bs-toggle="modal" data-bs-target="#loginModal">
+              <span class="svg --svg__cabinet position-relative"></span>
+              <span class="link__title d-none d-md-block">Аккаунт</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container"></div>
+</header>
+
+<div id="mobile-menu" class="mobile-menu ">
+	<div class="mobile-menu__inner">
+		<ul class="mobile-menu__catalog">
+			<li>
+				<a href="">Акции</a>
+			</li>
+			<li>
+				<a href="">Каталог</a>
+			</li>
+			<li>
+				<a href="">Смесители</a>
+			</li>
+			<li>
+				<a href="">Кессоны для скважин</a>
+			</li>
+			<li>
+				<a href="">Бытовые фильры для воды</a>
+			</li>
+			<li>
+				<a href="">Коттеджные фильтры для воды</a>
+			</li>
+			<li>
+				<a href="">Промышленные фильтры для воды</a>
+			</li>
+			<li>
+				<a href="">Насосы и насосное оборудование</a>
+			</li>
+			<li>
+				<a href="">Кварцевые обогреватели</a>
+			</li>
+			<li>
+				<a href="">Тёплый пол и терморегуляторы</a>
+			</li>
+			<li>
+				<a href="">Услуги</a>
+			</li>
+		
+		</ul>
+		<ul class="mobile-menu__account">
+			<li>
+				<a href=""><span class="svg --svg__cabinet"></span>Аккаунт</a>
+			</li>
+			<li>
+				<a href=""><span class="svg --svg__cart "></span>Корзина</a>
+			</li>
+			<li>
+				<a href=""><span class="svg --svg__mail "></span>Контакты</a>
+			</li>
+			<li>
+				<a href=""><span class="--svg__place-black svg"></span>Иваново</a>
+			</li>
+
+			<li>
+				<a href="tel:88000000000"><span class="svg --svg__phone"></span>8 (800) 000 000 0</a>
+			</li>
+		</ul>
+		<div class="mobile-menu__footer">
+			2000-2023 Магазин
+		</div>
+	</div>
+</div>
+<div class="back_frame"></div>
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="page-title d-flex align-items-center">
+              <h1 class="h1">Корзина</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 d-none d-lg-flex order-lg-1 order-0">
+            <nav style="--bs-breadcrumb-divider: '—'" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item" aria-current="page">Корзина</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col-lg-6 col-6 order-2 order-lg-1">
+            <a href="" class="clear-cart text-right"
+              ><span class="svg --svg__x"></span>Очистить корзину</a
+            >
+          </div>
+          <div class="col-6 col-lg-5 order-1">
+            <div class="text__incart">В корзине 1 товар</div>
+          </div>
+          <div class="col-12 col-lg-7 order-4">
+            <div class="d-flex flex-column flex-lg-row flex-wrap justify-content-lg-end">
+              <form action="" id="promo-form"></form>
+              <div class="promo d-flex align-items-center order-1 order-lg-0">
+                <div class="promo__title d-none d-lg-flex">Введите промокод:</div>
+
+                <div class="input-group order-1 order-lg-0">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Промокод"
+                    aria-describedby=""
+                    form="promo-form"
+                  />
+                  <button class="btn btn-primary" form="promo-form" type="submit" id="">
+                    Применить
+                  </button>
+                </div>
+              </div>
+              <div class="cart-total d-flex align-items-center order-0 order-lg-1">
+                <span class="cart-total__title">Итого:</span>
+                <span class="cart-total__value">4 800 ₽</span>
+                <a href="" class="btn btn-primary">Оформить заказ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container cart-page">
+        <div class="row">
+          <div class="col-12">
+            <div class="cart-body"><div class="cart-item">
+  <div class="cart-item__header d-lg-none d-flex-flex-column">
+    <div class="cart-item__title">
+      Корпус фильтра Гейзер 4Ч
+    </div>
+    <div class="cart-item__article">
+      Артикул:  00101012
+    </div>
+  </div>
+  <div class="cart-item__body">
+    <div class="cart-item__img">
+      <img src="/img/cart-item.png" alt="">
+    </div>
+    <div class="d-none d-lg-flex flex-column cart-item__caption">
+      <div class="cart-item__title">
+        Корпус фильтра Гейзер 4Ч
+      </div>
+      <div class="cart-item__article">
+        Артикул:  00101012
+      </div>
+    </div>
+    <div class="d-flex flex-column flex-lg-row justify-content-lg-between justify-content-end flex-lg-grow-1">
+      <div class="cart-item__price d-none d-lg-flex flex-column">
+        <div class="value">
+          4 800 ₽
+        </div>
+        <div class="caption">
+          Цена за 1 шт.
+        </div>
+      </div>
+      <div class="col__input">
+        <span class="minus svg --svg__minus"></span>
+        <input type="number"  value="0">
+        <span class="plus svg --svg__plus"></span>
+      </div>
+      <div class="cart-item__total">
+        4 800 ₽ 
+      </div>
+      
+    </div>
+    <a class="d-none d-lg-flex cart-item__delete">
+      <span class="svg --svg__x"></span>
+    </a>
+
+  </div>
+</div>
+
+<div class="cart-item">
+  <div class="cart-item__header d-lg-none d-flex-flex-column">
+    <div class="cart-item__title">
+      Корпус фильтра Гейзер 4Ч
+    </div>
+    <div class="cart-item__article">
+      Артикул:  00101012
+    </div>
+  </div>
+  <div class="cart-item__body">
+    <div class="cart-item__img">
+      <img src="/img/cart-item.png" alt="">
+    </div>
+    <div class="d-none d-lg-flex flex-column cart-item__caption">
+      <div class="cart-item__title">
+        Корпус фильтра Гейзер 4Ч
+      </div>
+      <div class="cart-item__article">
+        Артикул:  00101012
+      </div>
+    </div>
+    <div class="d-flex flex-column flex-lg-row justify-content-lg-between justify-content-end flex-lg-grow-1">
+      <div class="cart-item__price d-none d-lg-flex flex-column">
+        <div class="value">
+          4 800 ₽
+        </div>
+        <div class="caption">
+          Цена за 1 шт.
+        </div>
+      </div>
+      <div class="col__input">
+        <span class="minus svg --svg__minus"></span>
+        <input type="number"  value="0">
+        <span class="plus svg --svg__plus"></span>
+      </div>
+      <div class="cart-item__total">
+        4 800 ₽ 
+      </div>
+      
+    </div>
+    <a class="d-none d-lg-flex cart-item__delete">
+      <span class="svg --svg__x"></span>
+    </a>
+
+  </div>
+</div>
+</div>
+          </div>
+        </div>
+      </div>
+      <section class="hits with-products">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <div class="text-left position-relative">
+            Специально для вас
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+	 <div class="row g-2 g-lg-4 product-slider">
+		
+		<div class="col-6 col-md-4 col-lg-3 slide-product">
+  <a href="/product.html" class="card product-item">
+    <div class="sticker" style="background: #005BFF">Акция</div>
+    <div class="wish-btn wish">
+      <span class="--svg__heart-white svg"></span>
+    </div>
+    <div class="card__image">
+      <img class="card-img-top w-100" src="img/product-item.png" alt="Card image cap" />
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">Корпус фильтра Гейзер 4Ч</h5>
+      <span class="card-article"> Артикул 00101012 </span>
+      <div class="card-price d-flex justify-content-between flex-wrap">
+        <div class="stock instock" style="color: @@stock-color">В наличии</div>
+        <div class="price-value">4 800 ₽</div>
+      </div>
+    </div>
+    <div class="card__hidden">
+      <div class="buttons d-flex align-items-center">
+        <button href="/product.html" class="btn btn-primary flex-grow-1 addCart"> В корзину </button>
+        <button class="btn btn-primary d-none d-md-flex align-items-center justify-content-center wish">
+          <span class="svg --svg__heart-white "></span>
+        </button>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="col-6 col-md-4 col-lg-3 slide-product">
+  <a href="/product.html" class="card product-item">
+    <div class="sticker" style="background: #005BFF">Акция</div>
+    <div class="wish-btn wish">
+      <span class="--svg__heart-white svg"></span>
+    </div>
+    <div class="card__image">
+      <img class="card-img-top w-100" src="img/product-item.png" alt="Card image cap" />
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">Корпус фильтра Гейзер 4Ч</h5>
+      <span class="card-article"> Артикул 00101012 </span>
+      <div class="card-price d-flex justify-content-between flex-wrap">
+        <div class="stock instock" style="color: @@stock-color">В наличии</div>
+        <div class="price-value">4 800 ₽</div>
+      </div>
+    </div>
+    <div class="card__hidden">
+      <div class="buttons d-flex align-items-center">
+        <button href="/product.html" class="btn btn-primary flex-grow-1 addCart"> В корзину </button>
+        <button class="btn btn-primary d-none d-md-flex align-items-center justify-content-center wish">
+          <span class="svg --svg__heart-white "></span>
+        </button>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="col-6 col-md-4 col-lg-3 slide-product">
+  <a href="/product.html" class="card product-item">
+    <div class="sticker" style="background: #005BFF">Акция</div>
+    <div class="wish-btn wish">
+      <span class="--svg__heart-white svg"></span>
+    </div>
+    <div class="card__image">
+      <img class="card-img-top w-100" src="img/product-item.png" alt="Card image cap" />
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">Корпус фильтра Гейзер 4Ч</h5>
+      <span class="card-article"> Артикул 00101012 </span>
+      <div class="card-price d-flex justify-content-between flex-wrap">
+        <div class="stock instock" style="color: @@stock-color">В наличии</div>
+        <div class="price-value">4 800 ₽</div>
+      </div>
+    </div>
+    <div class="card__hidden">
+      <div class="buttons d-flex align-items-center">
+        <button href="/product.html" class="btn btn-primary flex-grow-1 addCart"> В корзину </button>
+        <button class="btn btn-primary d-none d-md-flex align-items-center justify-content-center wish">
+          <span class="svg --svg__heart-white "></span>
+        </button>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="col-6 col-md-4 col-lg-3 slide-product">
+  <a href="/product.html" class="card product-item">
+    <div class="sticker" style="background: #005BFF">Акция</div>
+    <div class="wish-btn wish">
+      <span class="--svg__heart-white svg"></span>
+    </div>
+    <div class="card__image">
+      <img class="card-img-top w-100" src="img/product-item.png" alt="Card image cap" />
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">Корпус фильтра Гейзер 4Ч</h5>
+      <span class="card-article"> Артикул 00101012 </span>
+      <div class="card-price d-flex justify-content-between flex-wrap">
+        <div class="stock instock" style="color: @@stock-color">В наличии</div>
+        <div class="price-value">4 800 ₽</div>
+      </div>
+    </div>
+    <div class="card__hidden">
+      <div class="buttons d-flex align-items-center">
+        <button href="/product.html" class="btn btn-primary flex-grow-1 addCart"> В корзину </button>
+        <button class="btn btn-primary d-none d-md-flex align-items-center justify-content-center wish">
+          <span class="svg --svg__heart-white "></span>
+        </button>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="col-6 col-md-4 col-lg-3 slide-product">
+  <a href="/product.html" class="card product-item">
+    <div class="sticker" style="background: #005BFF">Акция</div>
+    <div class="wish-btn wish">
+      <span class="--svg__heart-white svg"></span>
+    </div>
+    <div class="card__image">
+      <img class="card-img-top w-100" src="img/product-item.png" alt="Card image cap" />
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">Корпус фильтра Гейзер 4Ч</h5>
+      <span class="card-article"> Артикул 00101012 </span>
+      <div class="card-price d-flex justify-content-between flex-wrap">
+        <div class="stock instock" style="color: @@stock-color">В наличии</div>
+        <div class="price-value">4 800 ₽</div>
+      </div>
+    </div>
+    <div class="card__hidden">
+      <div class="buttons d-flex align-items-center">
+        <button href="/product.html" class="btn btn-primary flex-grow-1 addCart"> В корзину </button>
+        <button class="btn btn-primary d-none d-md-flex align-items-center justify-content-center wish">
+          <span class="svg --svg__heart-white "></span>
+        </button>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="col-6 col-md-4 col-lg-3 slide-product">
+  <a href="/product.html" class="card product-item">
+    <div class="sticker" style="background: #005BFF">Акция</div>
+    <div class="wish-btn wish">
+      <span class="--svg__heart-white svg"></span>
+    </div>
+    <div class="card__image">
+      <img class="card-img-top w-100" src="img/product-item.png" alt="Card image cap" />
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">Корпус фильтра Гейзер 4Ч</h5>
+      <span class="card-article"> Артикул 00101012 </span>
+      <div class="card-price d-flex justify-content-between flex-wrap">
+        <div class="stock instock" style="color: @@stock-color">В наличии</div>
+        <div class="price-value">4 800 ₽</div>
+      </div>
+    </div>
+    <div class="card__hidden">
+      <div class="buttons d-flex align-items-center">
+        <button href="/product.html" class="btn btn-primary flex-grow-1 addCart"> В корзину </button>
+        <button class="btn btn-primary d-none d-md-flex align-items-center justify-content-center wish">
+          <span class="svg --svg__heart-white "></span>
+        </button>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="col-6 col-md-4 col-lg-3 slide-product">
+  <a href="/product.html" class="card product-item">
+    <div class="sticker" style="background: #005BFF">Акция</div>
+    <div class="wish-btn wish">
+      <span class="--svg__heart-white svg"></span>
+    </div>
+    <div class="card__image">
+      <img class="card-img-top w-100" src="img/product-item.png" alt="Card image cap" />
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">Корпус фильтра Гейзер 4Ч</h5>
+      <span class="card-article"> Артикул 00101012 </span>
+      <div class="card-price d-flex justify-content-between flex-wrap">
+        <div class="stock instock" style="color: @@stock-color">В наличии</div>
+        <div class="price-value">4 800 ₽</div>
+      </div>
+    </div>
+    <div class="card__hidden">
+      <div class="buttons d-flex align-items-center">
+        <button href="/product.html" class="btn btn-primary flex-grow-1 addCart"> В корзину </button>
+        <button class="btn btn-primary d-none d-md-flex align-items-center justify-content-center wish">
+          <span class="svg --svg__heart-white "></span>
+        </button>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="col-6 col-md-4 col-lg-3 slide-product">
+  <a href="/product.html" class="card product-item">
+    <div class="sticker" style="background: #005BFF">Акция</div>
+    <div class="wish-btn wish">
+      <span class="--svg__heart-white svg"></span>
+    </div>
+    <div class="card__image">
+      <img class="card-img-top w-100" src="img/product-item.png" alt="Card image cap" />
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">Корпус фильтра Гейзер 4Ч</h5>
+      <span class="card-article"> Артикул 00101012 </span>
+      <div class="card-price d-flex justify-content-between flex-wrap">
+        <div class="stock instock" style="color: @@stock-color">В наличии</div>
+        <div class="price-value">4 800 ₽</div>
+      </div>
+    </div>
+    <div class="card__hidden">
+      <div class="buttons d-flex align-items-center">
+        <button href="/product.html" class="btn btn-primary flex-grow-1 addCart"> В корзину </button>
+        <button class="btn btn-primary d-none d-md-flex align-items-center justify-content-center wish">
+          <span class="svg --svg__heart-white "></span>
+        </button>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="col-6 col-md-4 col-lg-3 slide-product">
+  <a href="/product.html" class="card product-item">
+    <div class="sticker" style="background: #005BFF">Акция</div>
+    <div class="wish-btn wish">
+      <span class="--svg__heart-white svg"></span>
+    </div>
+    <div class="card__image">
+      <img class="card-img-top w-100" src="img/product-item.png" alt="Card image cap" />
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">Корпус фильтра Гейзер 4Ч</h5>
+      <span class="card-article"> Артикул 00101012 </span>
+      <div class="card-price d-flex justify-content-between flex-wrap">
+        <div class="stock instock" style="color: @@stock-color">В наличии</div>
+        <div class="price-value">4 800 ₽</div>
+      </div>
+    </div>
+    <div class="card__hidden">
+      <div class="buttons d-flex align-items-center">
+        <button href="/product.html" class="btn btn-primary flex-grow-1 addCart"> В корзину </button>
+        <button class="btn btn-primary d-none d-md-flex align-items-center justify-content-center wish">
+          <span class="svg --svg__heart-white "></span>
+        </button>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="col-6 col-md-4 col-lg-3 slide-product">
+  <a href="/product.html" class="card product-item">
+    <div class="sticker" style="background: #005BFF">Акция</div>
+    <div class="wish-btn wish">
+      <span class="--svg__heart-white svg"></span>
+    </div>
+    <div class="card__image">
+      <img class="card-img-top w-100" src="img/product-item.png" alt="Card image cap" />
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">Корпус фильтра Гейзер 4Ч</h5>
+      <span class="card-article"> Артикул 00101012 </span>
+      <div class="card-price d-flex justify-content-between flex-wrap">
+        <div class="stock instock" style="color: @@stock-color">В наличии</div>
+        <div class="price-value">4 800 ₽</div>
+      </div>
+    </div>
+    <div class="card__hidden">
+      <div class="buttons d-flex align-items-center">
+        <button href="/product.html" class="btn btn-primary flex-grow-1 addCart"> В корзину </button>
+        <button class="btn btn-primary d-none d-md-flex align-items-center justify-content-center wish">
+          <span class="svg --svg__heart-white "></span>
+        </button>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="col-6 col-md-4 col-lg-3 slide-product">
+  <a href="/product.html" class="card product-item">
+    <div class="sticker" style="background: #005BFF">Акция</div>
+    <div class="wish-btn wish">
+      <span class="--svg__heart-white svg"></span>
+    </div>
+    <div class="card__image">
+      <img class="card-img-top w-100" src="img/product-item.png" alt="Card image cap" />
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">Корпус фильтра Гейзер 4Ч</h5>
+      <span class="card-article"> Артикул 00101012 </span>
+      <div class="card-price d-flex justify-content-between flex-wrap">
+        <div class="stock instock" style="color: @@stock-color">В наличии</div>
+        <div class="price-value">4 800 ₽</div>
+      </div>
+    </div>
+    <div class="card__hidden">
+      <div class="buttons d-flex align-items-center">
+        <button href="/product.html" class="btn btn-primary flex-grow-1 addCart"> В корзину </button>
+        <button class="btn btn-primary d-none d-md-flex align-items-center justify-content-center wish">
+          <span class="svg --svg__heart-white "></span>
+        </button>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="col-6 col-md-4 col-lg-3 slide-product">
+  <a href="/product.html" class="card product-item">
+    <div class="sticker" style="background: #005BFF">Акция</div>
+    <div class="wish-btn wish">
+      <span class="--svg__heart-white svg"></span>
+    </div>
+    <div class="card__image">
+      <img class="card-img-top w-100" src="img/product-item.png" alt="Card image cap" />
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">Корпус фильтра Гейзер 4Ч</h5>
+      <span class="card-article"> Артикул 00101012 </span>
+      <div class="card-price d-flex justify-content-between flex-wrap">
+        <div class="stock instock" style="color: @@stock-color">В наличии</div>
+        <div class="price-value">4 800 ₽</div>
+      </div>
+    </div>
+    <div class="card__hidden">
+      <div class="buttons d-flex align-items-center">
+        <button href="/product.html" class="btn btn-primary flex-grow-1 addCart"> В корзину </button>
+        <button class="btn btn-primary d-none d-md-flex align-items-center justify-content-center wish">
+          <span class="svg --svg__heart-white "></span>
+        </button>
+      </div>
+    </div>
+  </a>
+</div>
+
+		
+	 </div>
+	</div>
+</section>
+
+    </main>
+
+    <div
+  class="modal fade"
+  id="montageModal"
+  tabindex="-1"
+  aria-labelledby="montageLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header">
+        <h5 class="modal-title" id="montageLabel">Заказать монтаж</h5>
+      </div>
+      <div class="modal-body">
+        <form action="" id="montage-form"></form>
+        <div class="forms">
+          <div>
+            <label for="city-input-montage" class="form-label required">Ваше имя</label>
+            <input
+              form="montage-form"
+              type="text"
+              class="form-control"
+              id="city-input-montage"
+              aria-describedby="cityHelp"
+              required
+            />
+          </div>
+          <div>
+            <label for="phone-input-montage" class="form-label required">Ваш телефон</label>
+            <input
+              form="montage-form"
+              type="text"
+              class="form-control phone"
+              id="phone-input-montage"
+              aria-describedby="phoneHelp"
+            />
+          </div>
+          <div>
+            <label for="adres-input-montage" class="form-label required">Адрес</label>
+            <input
+              form="montage-form"
+              type="text"
+              class="form-control"
+              id="adres-input-montage"
+              aria-describedby="phoneHelp"
+            />
+          </div>
+          <div>
+            <div class="form-txt">
+              Наш менеджер свяжется с вами в течении часа, проверьте, что все данные введены верно.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" form="montage-form" class="btn btn-primary">Отправить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="consultModal"
+  tabindex="-1"
+  aria-labelledby="consultLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header">
+        <h5 class="modal-title" id="consultLabel">Заказать консультацию</h5>
+      </div>
+      <div class="modal-body">
+        <form action="" id="consult-form"></form>
+        <div class="forms">
+          <div>
+            <label for="city-input-consult" class="form-label required">Ваше имя</label>
+            <input
+              form="consult-form"
+              type="text"
+              class="form-control"
+              id="city-input-consult"
+              aria-describedby="cityHelp"
+              required
+            />
+          </div>
+          <div>
+            <label for="phone-input-consult" class="form-label required">Ваш телефон</label>
+            <input
+              form="consult-form"
+              type="text"
+              class="form-control phone"
+              id="phone-input-consult"
+              aria-describedby="phoneHelp"
+            />
+          </div>
+          <div>
+            <label for="adres-input-consult" class="form-label required">Адрес</label>
+            <input
+              form="consult-form"
+              type="text"
+              class="form-control"
+              id="adres-input-consult"
+              aria-describedby="phoneHelp"
+            />
+          </div>
+          <div>
+            <div class="form-txt">
+              Наш менеджер свяжется с вами в течении часа, проверьте, что все данные введены верно.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" form="consult-form" class="btn btn-primary">Отправить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="successModal"
+  tabindex="-1"
+  aria-labelledby="successLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header">
+        <h5 class="modal-title" id="successLabel">Заявка успешно отправлена</h5>
+      </div>
+      <div class="modal-body">
+        <div class="form-txt">
+          Наш менеджер свяжется с вами в течении часа, проверьте, что все данные введены верно.
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-bs-dismiss="modal" class="btn btn-primary">Спасибо</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="loginModal"
+  tabindex="-1"
+  aria-labelledby="loginLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginLabel">Личный кабинет</h5>
+      </div>
+      <div class="modal-body">
+        <form action="" id="login-form"></form>
+        <div class="forms">
+          <div class="">
+            <label for="input-login" class="form-label required">Логин</label>
+            <input
+              form="login-form"
+              type="text"
+              class="form-control"
+              id="input-login"
+              aria-describedby="cityHelp"
+              required
+            />
+          </div>
+          <div class="position-relative pass-input">
+            <label for="password-input-login" class="form-label required">Пароль</label>
+            <input
+              form="login-form"
+              type="password"
+              class="form-control"
+              id="password-input-login"
+              aria-describedby="phoneHelp"
+            />
+          </div>
+          <div class="login-options d-flex justify-content-between align-items-center">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+              <label class="form-check-label" for="flexSwitchCheckDefault">Запомнить меня</label>
+            </div>
+            <a href="/forgot.html" class="forget">Забыли пароль?</a>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-between ps-0">
+        <button type="submit" form="login-form" class="btn btn-primary">Войти</button>
+        <button type="submit" form="login-form" class="btn btn-primary">Регистрация</button>
+      </div>
+      <div class="modal-links">
+				<div class="modal-links__title">
+					Быстрый вход через соцсети
+				</div>
+        <div class="d-flex align-items-center">
+          <a href="">
+            <img src="/img/icons/ya-login.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="/img/icons/google-login.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="/img/icons/mail-login.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="/img/icons/vk-login.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="/img/icons/bitrix-login.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div
+            class="d-flex flex-column flex-md-row align-items-center subscribe justify-content-md-center"
+          >
+            <div class="subscribe__title">Будь в курсе наших <br />акций и новостей</div>
+            <form action="" id="subscribe-form"></form>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Введите ваш e-mail"
+                aria-describedby="subscribe-btn"
+                form="subscribe-form"
+              />
+              <button
+                class="btn btn-primary search__btn"
+                form="subscribe-form"
+                type="submit"
+                id="subscribe-btn"
+              >
+                Подписаться
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-xxl-9">
+          <div class="d-flex flex-column flex-xxl-row justify-content-md-between">
+            <div class="footer__menu menu">
+              <div class="menu__title">Каталог</div>
+              <ul>
+                <li>
+                  <a href="">Септики</a>
+                </li>
+                <li>
+                  <a href="">Промышленные фильтры для воды</a>
+                </li>
+                <li>
+                  <a href="">Смесители</a>
+                </li>
+                <li>
+                  <a href="">Насосы и насосное оборудование</a>
+                </li>
+                <li>
+                  <a href="">Кессоны для скважин</a>
+                </li>
+                <li>
+                  <a href="">Кварцевые обогреватели</a>
+                </li>
+                <li>
+                  <a href="">Бытовые фильтры для воды</a>
+                </li>
+                <li>
+                  <a href="">Тёплый пол и терморегуляторы</a>
+                </li>
+                <li>
+                  <a href="">Коттеджные фильтры для воды</a>
+                </li>
+              </ul>
+            </div>
+						<div class="footer__menu menu">
+              <div class="menu__title">Для покупателя</div>
+              <ul>
+                <li>
+                  <a href="">Портфолио</a>
+                </li>
+                <li>
+                  <a href="">Акции</a>
+                </li>
+                <li>
+                  <a href="">Статьи</a>
+                </li>
+                <li>
+                  <a href="">Поставщикам</a>
+                </li>
+                <li>
+                  <a href="">О компании</a>
+                </li>
+                <li>
+                  <a href="">Сотрудничество</a>
+                </li>
+                <li>
+                  <a href="">Контакты</a>
+                </li>
+                <li>
+                  <a href="">Доставка и самовывоз</a>
+                </li>
+                <li>
+                  <a href="">Химический анализ воды</a>
+                </li>
+								<li>
+                  <a href="">Оплата</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+				<div class="col-12 col-xxl-3">
+					<div class="d-flex flex-column align-items-center align-items-xxl-end footer__contacts">
+						<a href="" class="phone d-flex align-items-center">
+							<span class="svg --svg__phone-white"></span> 8 (800) 000 000 0
+						</a>
+						<div class="work-time">
+							Ежедневно с 9:00 до 21:00
+						</div>
+						<a href="mailto:" class="mail-link">santkhnikarussia@gmail.com</a>
+					</div>
+				</div>
+      </div>
+    </div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="copyright d-flex flex-column flex-lg-row justify-content-lg-between align-items-center">
+						<span>2000-2023 Магазин</span>
+						<div class="d-flex">Design by<a href="">Prostudio Experts</a> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+</footer>
+
+    <script  src="js/libs.min.js"></script>
+<script type="module" src="js/main.min.js"></script>
+
+  </body>
+</html>

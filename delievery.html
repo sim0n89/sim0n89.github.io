@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+  <html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="верстка Доставка и самовывоз">
+	<meta name="keywords"
+				content="">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>H2O - Доставка и самовывоз</title>
+</head>
+
+
+  <body>
+    <header class="header">
+  <div class="header__top d-none d-lg-flex">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="header__place place d-flex align-items-center">
+          <span class="svg --svg__place"></span>
+          <span class="place__title">Иваново</span>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center">
+        <a href="tel:+8800000000" class="d-flex">8 (800) 000 000 0</a>
+      </div>
+      <div class="col-md-6">
+        <div class="navbar navbar-expand h-100">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="/services.html" class="nav-link active">Услуги</a></li>
+            <li class="nav-item"><a href="/portfolio.html" class="nav-link">Портфолио</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Статьи</a></li>
+            <li class="nav-item"><a href="/accii.html" class="nav-link">Акции</a></li>
+            <li class="nav-item"><a href="/about.html" class="nav-link">О компании</a></li>
+            <li class="nav-item"><a href="/contacts.html" class="nav-link">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="header__base hbase">
+    <div class="container">
+
+      <div class="col-12 d-flex justify-content-between">
+				<div class="d-flex align-items-center">
+					<a href="#" class="d-flex d-md-none" id="mobilemenu-toogler">
+						<span class="svg --svg__burger-black"></span>
+					</a>
+					<a href="/" class="logo">
+						<span class="svg --svg__logo"></span>
+					</a>
+				</div>
+				
+        <div class="hbase__center d-none d-md-flex justify-content-center">
+          <div class="dropdown">
+            <a
+              class="btn btn-primary dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="svg --svg__burger"></span>Каталог
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/category.html">Септики</a></li>
+              <li><a class="dropdown-item" href="/category.html">Смесители</a></li>
+              <li><a class="dropdown-item" href="/category.html">Кессоны для скважин</a></li>
+              <li><a class="dropdown-item" href="/category.html">Платиковые погреба</a></li>
+              <li><a class="dropdown-item" href="/category.html">Бытовые фильтры для воды</a></li>
+              <li><a class="dropdown-item" href="/category.html">Коттеджные фильтры для воды</a></li>
+              <li><a class="dropdown-item" href="/category.html">Промышленные фильтры для воды</a></li>
+              <li><a class="dropdown-item" href="/category.html">Насосы и насосное оборудование</a></li>
+              <li><a class="dropdown-item" href="/category.html">Кварцевые обогреватели</a></li>
+              <li><a class="dropdown-item" href="/category.html">Тёплый пол и терморегуляторы</a></li>
+            </ul>
+          </div>
+          <div class="input-group search">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Найти"
+              aria-describedby="search-btn"
+            />
+            <button class="btn btn-primary search__btn" type="button" id="button-addon1">
+              <span class="svg --svg__search"></span>
+            </button>
+          </div>
+        </div>
+        <div class="hbase__user user">
+          <div class="d-flex align-items-center h-100">
+            <a class="user__link link d-flex flex-column align-items-center position-relative d-md-none">
+              <span class="svg --svg__phone position-relative"
+                ></span
+              >
+            </a>
+            <a href="/wish.html" class="user__link link d-flex flex-column align-items-center position-relative">
+              <span class="svg --svg__heart position-relative"
+                ><span class="link__value position-absolute">500</span></span
+              >
+              <span class="link__title d-none d-md-block">Избранное</span>
+            </a>
+            <a href='/cart.html' class="user__link link d-flex flex-column align-items-center position-relative">
+              <span class="svg --svg__cart position-relative"
+                ><span class="link__value position-absolute">500</span></span
+              >
+              <span class="link__title d-none d-md-block">Корзина</span>
+            </a>
+            <a class="user__link link d-flex flex-column align-items-center position-relative" data-bs-toggle="modal" data-bs-target="#loginModal">
+              <span class="svg --svg__cabinet position-relative"></span>
+              <span class="link__title d-none d-md-block">Аккаунт</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container"></div>
+</header>
+
+<div id="mobile-menu" class="mobile-menu ">
+	<div class="mobile-menu__inner">
+		<ul class="mobile-menu__catalog">
+			<li>
+				<a href="/accii.html">Акции</a>
+			</li>
+			<li>
+				<a href="/category.html">Каталог</a>
+			</li>
+			<li>
+				<a href="/category.html">Смесители</a>
+			</li>
+			<li>
+				<a href="/category.html">Кессоны для скважин</a>
+			</li>
+			<li>
+				<a href="/category.html">Бытовые фильры для воды</a>
+			</li>
+			<li>
+				<a href="/category.html">Коттеджные фильтры для воды</a>
+			</li>
+			<li>
+				<a href="/category.html">Промышленные фильтры для воды</a>
+			</li>
+			<li>
+				<a href="/category.html">Насосы и насосное оборудование</a>
+			</li>
+			<li>
+				<a href="/category.html">Кварцевые обогреватели</a>
+			</li>
+			<li>
+				<a href="/category.html">Тёплый пол и терморегуляторы</a>
+			</li>
+			<li>
+				<a href="/services.html">Услуги</a>
+			</li>
+		
+		</ul>
+		<ul class="mobile-menu__account">
+			<li>
+				<a href=""><span class="svg --svg__cabinet"></span>Аккаунт</a>
+			</li>
+			<li>
+				<a href="/cart.html"><span class="svg --svg__cart "></span>Корзина</a>
+			</li>
+			<li>
+				<a href="/contacts.html"><span class="svg --svg__mail "></span>Контакты</a>
+			</li>
+			<li>
+				<a href=""><span class="--svg__place-black svg"></span>Иваново</a>
+			</li>
+
+			<li>
+				<a href="tel:88000000000"><span class="svg --svg__phone"></span>8 (800) 000 000 0</a>
+			</li>
+		</ul>
+		<div class="mobile-menu__footer">
+			2000-2023 Магазин
+		</div>
+	</div>
+</div>
+<div class="back_frame"></div>
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="page-title d-flex align-items-center text-left justify-content-start">
+              <h1 class="h1">Доставка и самовывоз</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+  <div class="row d-none d-md-flex">
+    <div class="col-6 col-lg-12">
+      <nav style="--bs-breadcrumb-divider: '—'" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Главная</a></li>
+          <li class="breadcrumb-item" aria-current="page">Каталог</li>
+          <li class="breadcrumb-item active" aria-current="page">Корпус фильтра Грейзер 4Ч</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</div>
+
+      <div class="container text-page">
+				<div class="row">
+					<div class="col-12">
+						<h3>
+							Самовывоз
+						</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero pariatur rem ad debitis sint consequuntur vero sequi! Aliquam illo a doloribus autem, ipsa maiores harum reiciendis quae vero quam voluptates necessitatibus alias. Nemo sed blanditiis quia tenetur obcaecati aliquam vitae quas, nihil, porro incidunt maiores similique, voluptates accusantium autem aut esse. Omnis, possimus soluta est deserunt perferendis totam eius obcaecati, dolores velit error rerum consequuntur cum maiores exercitationem voluptas molestias ipsam. Adipisci quod beatae facilis sequi a quas earum tempore eligendi non magni illum, reprehenderit assumenda fuga dignissimos perspiciatis corporis! Sed quam veritatis sequi, doloribus maiores molestiae culpa ut aliquid error eligendi maxime, consectetur quod rem quos! Odit, facere. Reiciendis iure eaque qui sunt atque tempora at sint veniam asperiores, inventore quos ipsa deleniti vel delectus possimus hic explicabo dolorem praesentium nesciunt consectetur obcaecati corporis adipisci! Suscipit eius eligendi ipsum quos saepe soluta magni molestiae odit, reiciendis nostrum doloremque, debitis exercitationem sequi provident. Accusantium aliquam dignissimos architecto corrupti laborum dolor minima reprehenderit rerum consequatur a, vitae cumque delectus laudantium laboriosam autem officia. Dignissimos libero eaque sunt sapiente, et ullam consectetur repudiandae illo itaque laborum recusandae iste, quo quasi cum expedita labore exercitationem? Pariatur in adipisci quae odio doloribus, nihil laborum at ut aperiam assumenda provident, laboriosam eum dolore molestiae voluptates? Sunt, neque rem eaque sequi voluptates quae error natus dolores voluptatum vero. Exercitationem consequatur optio quaerat esse nesciunt ipsa, dignissimos consectetur, cupiditate atque ex mollitia autem. Voluptate nisi repellendus, voluptas consectetur tempore magnam harum iste ab temporibus. Blanditiis reprehenderit numquam, ab ea molestias culpa vitae explicabo molestiae, consequatur sint fuga ipsum fugiat provident recusandae facilis facere! Est corporis ullam eveniet maxime tempora iusto perspiciatis cum quae quis! Molestiae repellendus voluptatum nihil voluptatibus aspernatur maiores quas aperiam at et magnam labore optio totam placeat soluta, tempora ducimus dolorem quae, iste hic.
+						</p>
+						<h3>
+							Доставка по городу Иваново
+						</h3>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit sunt deserunt, id eligendi omnis cumque velit odio atque, blanditiis aliquam quas laudantium? Eum repellat saepe, iste sit molestias sunt, architecto provident adipisci officiis iusto ducimus laborum ad reiciendis quasi ullam quia veritatis dolores dolorum a accusamus necessitatibus quam impedit quos nam! Expedita accusantium accusamus, modi dolores non id veniam molestias consectetur sit quos asperiores nam? Vel odit eum totam, distinctio nostrum rerum unde pariatur tempora temporibus et maiores aut corrupti perspiciatis magnam ad ab aperiam modi nemo quisquam enim! Aperiam minus ullam necessitatibus labore adipisci sed doloremque tenetur repudiandae placeat porro expedita dolor perspiciatis harum, incidunt alias? Voluptates odio iure aut unde. Ipsam et accusantium provident mollitia exercitationem optio dolor perferendis ab hic odio rerum repudiandae odit, eius doloremque dolorum. Quis voluptatem tenetur, atque possimus distinctio commodi, nihil rem at aliquid itaque sint minima consequuntur? Laborum natus qui rem mollitia rerum consequuntur, aliquid dolorem iure sed totam quasi cumque possimus officia ab harum fugiat nobis alias tempore doloremque earum consectetur ipsum quibusdam. Enim expedita ipsa magnam quas sit dignissimos non, voluptatibus ullam laboriosam delectus at totam perspiciatis nostrum, ipsum nemo nesciunt maiores consequatur deleniti? Ea temporibus est dolorum accusantium consequuntur, nostrum similique nesciunt eveniet commodi dignissimos voluptatum exercitationem? Earum dolorum neque ex consequatur ad repudiandae non enim tenetur quidem nemo! Nemo, minima excepturi amet itaque dignissimos ratione molestias sed ea exercitationem eveniet velit neque obcaecati provident saepe dolorum numquam eius impedit tempore ipsa consequuntur. Eveniet ducimus laboriosam porro consectetur a placeat dicta adipisci, suscipit necessitatibus impedit sint autem optio? Corporis quibusdam nobis, dolores non veniam dignissimos illo iusto nostrum eum nulla ipsa suscipit veritatis, nihil a repudiandae vel eius delectus accusamus eligendi facilis tempore quas iste omnis? Qui ducimus saepe animi. Assumenda dignissimos ullam repellendus odit molestiae obcaecati, aliquam amet nulla excepturi, modi alias iste ab magnam omnis beatae laboriosam quos velit vero quas itaque explicabo! Commodi quas, illo eligendi quia nostrum consectetur culpa odit rerum, ratione, doloribus quibusdam. Consequuntur recusandae porro totam quibusdam expedita possimus dolor consectetur earum tenetur assumenda, architecto blanditiis amet dicta dolorem deleniti fugiat, optio magni ad quidem sequi sed, dolorum voluptates debitis. Iusto, nobis? Nobis rem impedit similique repellat? Maiores, dignissimos vitae. Sequi neque iste, omnis velit assumenda, eum, natus ducimus similique modi corrupti inventore quaerat dolores itaque eius quas fugit in necessitatibus nostrum! Cum recusandae hic veniam facere quae. Ipsum nihil dolorem ducimus minima architecto? Illum ratione minus laboriosam modi reprehenderit a perspiciatis, amet rem hic voluptas corrupti consequatur. Illo sapiente saepe corporis nemo, ex dignissimos distinctio expedita similique possimus veniam mollitia ratione tempore officia natus soluta, enim delectus esse deleniti eum veritatis vel! Consequatur eligendi similique sequi facere id accusamus, sed numquam quae ipsa, rem assumenda commodi! Nobis adipisci nulla atque ex omnis libero, placeat iure enim incidunt ducimus nemo consectetur mollitia quisquam ut qui voluptate magnam tempora quidem velit quo. Id illum ad exercitationem, impedit consequuntur deserunt accusamus cupiditate doloremque libero! Repellendus, laudantium quos. Delectus ipsa quod tempore, quos quasi dignissimos tempora.
+						</p>
+						<h3>
+							Доставка в другой город
+						</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloribus recusandae commodi aut architecto quisquam asperiores temporibus similique sit? Maiores ad eum tempore ipsum ex vitae facere similique! Sunt, perspiciatis!
+						</p>
+					</div>
+				</div>
+      </div>
+    </main>
+    <div
+  class="modal fade"
+  id="montageModal"
+  tabindex="-1"
+  aria-labelledby="montageLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header">
+        <h5 class="modal-title" id="montageLabel">Заказать монтаж</h5>
+      </div>
+      <div class="modal-body">
+        <form action="" id="montage-form"></form>
+        <div class="forms">
+          <div>
+            <label for="city-input-montage" class="form-label required">Ваше имя</label>
+            <input
+              form="montage-form"
+              type="text"
+              class="form-control"
+              id="city-input-montage"
+              aria-describedby="cityHelp"
+              required
+            />
+          </div>
+          <div>
+            <label for="phone-input-montage" class="form-label required">Ваш телефон</label>
+            <input
+              form="montage-form"
+              type="text"
+              class="form-control phone"
+              id="phone-input-montage"
+              aria-describedby="phoneHelp"
+            />
+          </div>
+          <div>
+            <label for="adres-input-montage" class="form-label required">Адрес</label>
+            <input
+              form="montage-form"
+              type="text"
+              class="form-control"
+              id="adres-input-montage"
+              aria-describedby="phoneHelp"
+            />
+          </div>
+          <div>
+            <div class="form-txt">
+              Наш менеджер свяжется с вами в течении часа, проверьте, что все данные введены верно.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" form="montage-form" class="btn btn-primary">Отправить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="consultModal"
+  tabindex="-1"
+  aria-labelledby="consultLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header">
+        <h5 class="modal-title" id="consultLabel">Заказать консультацию</h5>
+      </div>
+      <div class="modal-body">
+        <form action="" id="consult-form"></form>
+        <div class="forms">
+          <div>
+            <label for="city-input-consult" class="form-label required">Ваше имя</label>
+            <input
+              form="consult-form"
+              type="text"
+              class="form-control"
+              id="city-input-consult"
+              aria-describedby="cityHelp"
+              required
+            />
+          </div>
+          <div>
+            <label for="phone-input-consult" class="form-label required">Ваш телефон</label>
+            <input
+              form="consult-form"
+              type="text"
+              class="form-control phone"
+              id="phone-input-consult"
+              aria-describedby="phoneHelp"
+            />
+          </div>
+          <div>
+            <label for="adres-input-consult" class="form-label required">Адрес</label>
+            <input
+              form="consult-form"
+              type="text"
+              class="form-control"
+              id="adres-input-consult"
+              aria-describedby="phoneHelp"
+            />
+          </div>
+          <div>
+            <div class="form-txt">
+              Наш менеджер свяжется с вами в течении часа, проверьте, что все данные введены верно.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" form="consult-form" class="btn btn-primary">Отправить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="successModal"
+  tabindex="-1"
+  aria-labelledby="successLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header">
+        <h5 class="modal-title" id="successLabel">Заявка успешно отправлена</h5>
+      </div>
+      <div class="modal-body">
+        <div class="form-txt">
+          Наш менеджер свяжется с вами в течении часа, проверьте, что все данные введены верно.
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-bs-dismiss="modal" class="btn btn-primary">Спасибо</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="loginModal"
+  tabindex="-1"
+  aria-labelledby="loginLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginLabel">Личный кабинет</h5>
+      </div>
+      <div class="modal-body">
+        <form action="" id="login-form"></form>
+        <div class="forms">
+          <div class="">
+            <label for="input-login" class="form-label required">Логин</label>
+            <input
+              form="login-form"
+              type="text"
+              class="form-control"
+              id="input-login"
+              aria-describedby="cityHelp"
+              required
+            />
+          </div>
+          <div class="position-relative pass-input">
+            <label for="password-input-login" class="form-label required">Пароль</label>
+            <input
+              form="login-form"
+              type="password"
+              class="form-control"
+              id="password-input-login"
+              aria-describedby="phoneHelp"
+            />
+          </div>
+          <div class="login-options d-flex justify-content-between align-items-center">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+              <label class="form-check-label" for="flexSwitchCheckDefault">Запомнить меня</label>
+            </div>
+            <a href="/forgot.html" class="forget">Забыли пароль?</a>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-between ps-0">
+        <button type="submit" form="login-form" class="btn btn-primary">Войти</button>
+        <button type="submit" form="login-form" class="btn btn-primary">Регистрация</button>
+      </div>
+      <div class="modal-links">
+				<div class="modal-links__title">
+					Быстрый вход через соцсети
+				</div>
+        <div class="d-flex align-items-center">
+          <a href="">
+            <img src="/img/icons/ya-login.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="/img/icons/google-login.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="/img/icons/mail-login.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="/img/icons/vk-login.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="/img/icons/bitrix-login.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div
+            class="d-flex flex-column flex-md-row align-items-center subscribe justify-content-md-center"
+          >
+            <div class="subscribe__title">Будь в курсе наших <br />акций и новостей</div>
+            <form action="" id="subscribe-form"></form>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Введите ваш e-mail"
+                aria-describedby="subscribe-btn"
+                form="subscribe-form"
+              />
+              <button
+                class="btn btn-primary search__btn"
+                form="subscribe-form"
+                type="submit"
+                id="subscribe-btn"
+              >
+                Подписаться
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-xxl-9">
+          <div class="d-flex flex-column flex-xxl-row justify-content-md-between">
+            <div class="footer__menu menu">
+              <div class="menu__title">Каталог</div>
+              <ul>
+                <li>
+                  <a href="">Септики</a>
+                </li>
+                <li>
+                  <a href="">Промышленные фильтры для воды</a>
+                </li>
+                <li>
+                  <a href="">Смесители</a>
+                </li>
+                <li>
+                  <a href="">Насосы и насосное оборудование</a>
+                </li>
+                <li>
+                  <a href="">Кессоны для скважин</a>
+                </li>
+                <li>
+                  <a href="">Кварцевые обогреватели</a>
+                </li>
+                <li>
+                  <a href="">Бытовые фильтры для воды</a>
+                </li>
+                <li>
+                  <a href="">Тёплый пол и терморегуляторы</a>
+                </li>
+                <li>
+                  <a href="">Коттеджные фильтры для воды</a>
+                </li>
+              </ul>
+            </div>
+						<div class="footer__menu menu">
+              <div class="menu__title">Для покупателя</div>
+              <ul>
+                <li>
+                  <a href="">Портфолио</a>
+                </li>
+                <li>
+                  <a href="">Акции</a>
+                </li>
+                <li>
+                  <a href="">Статьи</a>
+                </li>
+                <li>
+                  <a href="">Поставщикам</a>
+                </li>
+                <li>
+                  <a href="">О компании</a>
+                </li>
+                <li>
+                  <a href="">Сотрудничество</a>
+                </li>
+                <li>
+                  <a href="">Контакты</a>
+                </li>
+                <li>
+                  <a href="">Доставка и самовывоз</a>
+                </li>
+                <li>
+                  <a href="">Химический анализ воды</a>
+                </li>
+								<li>
+                  <a href="">Оплата</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+				<div class="col-12 col-xxl-3">
+					<div class="d-flex flex-column align-items-center align-items-xxl-end footer__contacts">
+						<a href="" class="phone d-flex align-items-center">
+							<span class="svg --svg__phone-white"></span> 8 (800) 000 000 0
+						</a>
+						<div class="work-time">
+							Ежедневно с 9:00 до 21:00
+						</div>
+						<a href="mailto:" class="mail-link">santkhnikarussia@gmail.com</a>
+					</div>
+				</div>
+      </div>
+    </div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="copyright d-flex flex-column flex-lg-row justify-content-lg-between align-items-center">
+						<span>2000-2023 Магазин</span>
+						<div class="d-flex">Design by<a href="">Prostudio Experts</a> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+</footer>
+
+    <script  src="js/libs.min.js"></script>
+<script type="module" src="js/main.min.js"></script>
+
+  </body>
+</html>
